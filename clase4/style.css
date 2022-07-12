@@ -1,0 +1,140 @@
+body{
+    display: flex;
+    flex-direction: column;  
+    gap: 100px;
+    padding-left: 300px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 100px;
+}
+
+.texto{
+    width: 200px; 
+    height: 200px; 
+    border: 2px solid black; 
+}
+/* trasnformaciones en 2D*/
+.uno{
+    background-color: violet;
+    transition-property: transform ;
+    transition-duration: 7s;/* como transita esa propiedad de un estadio a otro*/
+    transition-timing-function: cubic-bezier(.03,.63,.93,-0.09);
+}
+
+.uno:hover{
+
+        /*      translate(-100px,20px)  */
+    transform: translateX(-300px) translateY(20px) rotate(-20deg); /* unidades medida */
+}
+
+
+
+
+
+
+
+
+
+.dos{
+    background-color: lightblue;
+/*                    x  y      */    
+    transform: scale(0.5,2);/* numeros sin unidad*/
+    /*scaleX() scaleY()*/
+}
+
+.tres{
+    background-color: yellow;
+    transform: rotate(20deg);/* unidad de grados ; signo positivo gira en sentido horario; signo negativo gira en sentido antihorario*/
+}
+
+.cuatro{
+    background-color: orange;
+ /*                   x     y  */   
+    transform: skew(200deg,10deg);
+}
+
+section{
+    position: relative;
+}
+.cuboVerde{
+    background-color: green;
+    width: 200px; 
+    height: 200px; 
+    border: 2px solid black; 
+    transform: skew(200deg,10deg); 
+}
+  .textoCubo{
+      position: absolute;
+      bottom: 90px;
+      left: 50px;
+      width: 150px;
+    /*transform: skew(-200deg,-10deg);*/
+}   
+/*
+id va a predominar sobre la clase 
+*/
+
+/*----------------------------*/
+
+.contenedorPadre{
+    border: 2px solid darkred;
+    width: 200px; 
+    height: 200px; 
+    perspective: 800px;
+}
+
+.cuboHijo{
+    width: 100px;
+   
+    background-color: cornflowerblue;
+    transform: translateZ(100px) rotateX(20deg);
+}
+
+
+.textoD{
+
+    animation-name: cercania;
+    animation-duration: 7s;
+    animation-fill-mode: backwards;
+  }
+
+  .texto2{
+    animation-name: Letras-desde-la-derecha ;
+    animation-duration: 5s;
+  }
+ @keyframes cercania{
+   0%{
+    transform: scale(0.1);
+   }
+
+   30%{
+    transform: scale(0.1);
+   }
+
+   100%{
+    transform: scale(2);
+   }
+ }
+
+ @keyframes Letras-desde-la-derecha {
+    from {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+        margin-left: 30%;
+        width: 85%;
+        color: var(--Azul-2);
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}

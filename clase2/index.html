@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 >Video </h1>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/wDdYBpZWR_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- videos-->
+
+    <!-- <a href="https://www.youtube.com/embed/wDdYBpZWR_U">Ir al sitio</a> --> 
+
+    <!-- Con barra de navegacion predeterminada-->
+     <video class="video2"  poster="./Barra personalizada/IMAGEN.jpg" controls autoplay loop="true">
+        <source src="./videos/video2.ogv">
+        <source src="./videos/video2.mp4">            
+    </video> 
+
+    <!-- barra de navegacion personalizada-->
+    <section class="seccion-video">
+        <video class="video1"  poster="./imagen/IMAGEN.jpg" >
+            <source src="./videos/video2.ogv">
+            <source src="./videos/video2.mp4">            
+        </video>
+        <div class="barra-rep" >
+            <button  onclick="inicio()">INICIO</button>
+            <button onclick="pausar()">PAUSA</button>            
+            <p class="duracion"></p>
+        </div>
+        
+    </section>
+
+
+
+    <!-- <form action="">
+        <label for="nombre" onclick="agregar()">Nombre</label>
+        <input type="text" id="nombre" name="nombre" >
+    </form> -->
+    <script src="./script.js"></script>
+</body>
+</html>

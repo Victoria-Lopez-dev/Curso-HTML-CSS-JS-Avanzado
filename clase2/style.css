@@ -1,0 +1,29 @@
+video{
+    width: 500px;
+    /* height: 500px; */
+    display: block;
+    margin: auto;
+}
+button{
+
+    margin-top: 10px;
+    padding: 5px;
+    background-color: lightseagreen;
+}
+
+.seccion-video{
+
+    background-color: lightblue;
+    border:4px solid darkblue;
+    width: 500px;
+    height: 400px;
+}
+.barra-rep{
+    opacity: 0;
+  
+}
+
+.barra-rep:hover{
+    opacity: 1;  
+    transition: opacity 1s;
+}

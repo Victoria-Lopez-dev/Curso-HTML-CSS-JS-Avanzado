@@ -1,0 +1,112 @@
+/*----- flexbox -----*/
+.container-flex{
+    background-color: pink;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    gap: 20px;
+}
+/* .cubo{
+    margin-right: 20px;
+} */
+.uno{
+    flex-grow: 2;
+    /* justify-self: ;
+    align-self: ; */
+}
+.dos{
+    flex-grow: 1;
+}
+.tres{
+    flex-grow: 1;
+}
+.cubo{
+    border: 2px solid black;
+    background-color: orange;
+    width: 200px;
+}
+
+/*----- grid -----*/
+
+
+.container-grid{
+    display: grid;
+    background-color: lightseagreen;
+    height: 200px;
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: 1fr 2fr;
+    row-gap: 20px;/*grid-row-gap*/
+    column-gap: 20px;/*grid-column-gap*/
+    grid-template-areas: 
+    "item1 item1 item2"
+    " item3 item3 item2"
+    ;
+}
+.hijo-grid{
+    border: 2px solid black;
+    background-color: dodgerblue;
+    /* width: 50px; */
+}
+.hijo1{
+    /* grid-column: 2/3; */
+    grid-area: item1;
+}
+.hijo2{
+    grid-area: item2;
+}
+.hijo3{
+    grid-area: item3;
+}
+
+
+/*.container-grid:
+ grid-template-columns: 1fr 1fr 2fr ; 
+ align-items: center;
+    justify-items: end;
+*/
+/* place-items:center end ; abreviado de align y justify-items*/
+   
+/*
+1000px /4 250 c/u 
+col1 250px 2 250px 3 500px
+*/
+/* 
+@media(max-width:400px){
+    .container-grid{
+        grid-template-areas: 
+        "item1 item1 ."
+        " item2 item3 ."
+        ;
+    }
+} */
+/*---------------------*/
+/*DISPLAY*/
+article{
+    background-color: brown;
+    width: 500px;
+    height: 100px;
+    margin-top: 100px;
+    display: flex;/* display:grid*/
+    /*lo colocamos en el padre para que afecte a sus hijos*/
+}
+
+h3{
+    display: inline-block;/* display:block*/
+    width:100px ;
+    /*colocamos en el elemento que queremos que se comporte de esa forma*/
+}
+/*
+Titulo -> elemento en bloque
+
+display:block
+*/
+
+/*anchor y button CLick -> elementos en linea
+display:inline-block
+*/
+
+

@@ -1,0 +1,46 @@
+.cohete{
+    width: 100px;
+}
+span{
+    background-color: red;
+}
+div{
+    background-color: lightblue;
+    width: 200px;
+}
+
+ol{
+    list-style-type: lower-greek;
+}
+
+.menu{
+     list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.card{
+    border: 2px solid brown;
+}
+
+#text2{
+    font-weight: bolder;
+    color: chocolate;
+}
+
+ul,.card,#text1{
+    background-color: aqua;
+  
+}
+
+ol > li{/* los <li> que son hijos de los <ol>*/
+
+}
+
+.image-card:hover + p{/* el hermano proximo*/
+    background-color: darkblue;
+}
+
+.image-card ~ button{
+
+}

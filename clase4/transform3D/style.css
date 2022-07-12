@@ -1,0 +1,85 @@
+.caras {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 100px;
+    text-align: center;
+    /*          name  duration  */
+    /* animation: color 5s infinite; */
+  }
+  
+  .contenedor-cubo{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    perspective: 800px;
+    margin-left: 100px;
+    margin-top: 100px;
+     animation-name: cerca;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+    animation-play-state: running; 
+  
+  }
+  
+
+  .top {
+    background-color: skyblue;
+     transform: rotateX(67deg) translateZ(70px) rotateZ(135deg) translateX(14px) rotateY(2deg); 
+       width: 110px;
+}
+  
+  .left {
+    background-color: pink;
+    transform: rotateY(315deg) translateZ(69px)rotateZ(15deg)rotateX(-17deg)translateY(1px);
+    height: 105px;
+    width: 110px;
+  }
+  
+  .front {
+    background-color: limegreen;
+    transform: translateZ(50px) translateX(28px) rotateZ(335deg) rotateY(42deg) rotateX(331deg);
+    width: 110px;
+  }
+
+
+  /*animation*/
+
+
+  @keyframes cerca {
+    0%{
+      perspective: 800px;
+    }
+
+    80%{
+      perspective: 200px;
+    }
+    100%{
+      perspective: 100px;
+    }
+  }
+  @keyframes color{
+    0%{
+      background-color: aqua;
+      font-size: 100px;
+    }
+
+    20%{
+      background-color: blue;
+      font-size: 80px;
+    }
+
+    60%{
+      background-color: teal;
+    }
+    100%{
+      background-color: yellowgreen;
+    }
+  }
+  
+
+  /*-------*/
+
+
+  

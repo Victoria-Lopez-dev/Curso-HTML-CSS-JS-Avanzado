@@ -1,0 +1,49 @@
+.barra{
+    background-color: #1d1d1d;
+
+    border-radius: 10px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.botonera{
+    display: flex;
+    gap: 20px;
+}
+.container{
+    padding: 5px;
+    background-color: black;
+    width: 70%;
+}
+
+a{
+    text-decoration: none;
+}
+p{
+   padding: 10px ;
+   border-radius: 10px;
+   color:#333333;
+   font-family: Arial, Helvetica, sans-serif;
+   box-shadow: 2px 3px rgb(130, 128, 128);
+}
+#play{
+   background-color: #EEEEEE;
+}
+
+#pause{
+    background-color: #EEEEEE;
+
+}
+
+
+p:active{
+    box-shadow: 0px 0px darkgray;
+    transform: translate(3px, 2px);
+}
+#showTime{
+    padding-top: 28px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
