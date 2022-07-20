@@ -1,0 +1,25 @@
+/* svg{
+    border: 2px solid green;
+} */
+#rectangulo:hover{
+    transition: background-color 3s;
+    background-color: royalblue;
+}
+
+#rectangulo{
+    animation-name: mover;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes mover{
+    10%{
+        transform:translate(100px);
+    }
+    50%{
+        transform: translate(100px,40px);
+    }
+    100%{
+        transform: translate(10px,10px);
+    }
+}
